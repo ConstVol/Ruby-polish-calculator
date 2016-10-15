@@ -8,9 +8,9 @@ File.open('photo.jpg', 'wb') do |fo|
   fo.write open("https://pp.vk.me/c638721/v638721520/63f1/RjDz_QIwe84.jpg").read
 end
 
-GREETINGS_TEXT = "Domo arigato mister roboto! I'm your personal polish notation calculator. Feel free to ask whatever you want!"
 AUTHOR_TEXT = "The author of this amazing bot is Constantin Volodkevich, inspired by Alexander Adamenko from Vienna - WHO LET THE BOTS OUT?"
-HELP = "Here is some sample commands to run:
+HELP = "Domo arigato mister roboto! I'm your personal polish notation calculator. Feel free to ask whatever you want!
+Here is some sample commands to run:
 /author
 /start
 To use polish calculator functions just type in equation in proper polish notation, where numbers are separated by whitespaces."
@@ -25,10 +25,6 @@ Telegram::Bot::Client.run(token) do |bot|
 
     case message.text
 
-      when "/help"
-
-        bot.api.sendMessage(chat_id: message.chat.id, text: HELP)
-
       when "/author"
 
         bot.api.sendMessage(chat_id: message.chat.id, text: AUTHOR_TEXT)
@@ -36,7 +32,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
       when "/start"
 
-        bot.api.sendMessage(chat_id: message.chat.id, text: GREETINGS_TEXT)
+        bot.api.sendMessage(chat_id: message.chat.id, text: HELP)
 
       else
 
