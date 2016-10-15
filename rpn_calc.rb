@@ -4,7 +4,8 @@ class RPN_calc
 
     elements = clean_string(task)
     stack = []
-    elements.each do |e|
+    Array(elements).each do |e|
+
       if !(%w[* - + / ** !].include?(e))
         stack.push e.to_f
         next
@@ -34,6 +35,7 @@ class RPN_calc
      end
 
     end
+
     stack.pop
   end
 
@@ -45,6 +47,7 @@ class RPN_calc
     else
       "Kurwa! Seems that's not proper polish notation. Try again !"
     end
+    rescue "Error!"
   end
 
   def toniller(num, counter)
