@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/polish_calk@rpn_calc.coverage" NAME="rpn_calc Coverage Results" MODIFIED="1476399139439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="polish_calk" />
-    <SUITE FILE_PATH="coverage/polish_calc@Telegram_Bot.coverage" NAME="Telegram_Bot Coverage Results" MODIFIED="1476562576247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="polish_calk" />
+    <SUITE FILE_PATH="coverage/polish_calc@Telegram_Bot.coverage" NAME="Telegram_Bot Coverage Results" MODIFIED="1476571118381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="polish_calk" />
     <SUITE FILE_PATH="coverage/polish_calc@rpn_calc.coverage" NAME="rpn_calc Coverage Results" MODIFIED="1476562555641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="polish_calk" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -26,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rpn_calc.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rpn_calc.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpn_calc.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="780">
+              <caret line="52" column="108" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="108" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Telegram_Bot.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Telegram_Bot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Telegram_Bot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="504">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -69,8 +69,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Calculator.rb" />
-        <option value="$PROJECT_DIR$/rpn_calc.rb" />
         <option value="$PROJECT_DIR$/Telegram_Bot.rb" />
+        <option value="$PROJECT_DIR$/rpn_calc.rb" />
       </list>
     </option>
   </component>
@@ -336,12 +336,12 @@
       <option name="presentableId" value="Default" />
       <updated>1476390440655</updated>
       <workItem from="1476390442316" duration="7103000" />
-      <workItem from="1476524493177" duration="20772000" />
+      <workItem from="1476524493177" duration="24557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27875000" />
+    <option name="totallyTimeSpent" value="31660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="951" extended-state="6" />
@@ -400,7 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Calculator.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/telegram-bot-ruby-0.6.0.2/lib/telegram/bot/client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -408,7 +408,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/telegram-bot-ruby-0.6.0.2/lib/telegram/bot/client.rb">
+    <entry file="file://$PROJECT_DIR$/Telegram_Bot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Calculator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -418,16 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rpn_calc.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Telegram_Bot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="780">
+          <caret line="52" column="108" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="108" />
           <folding />
         </state>
       </provider>

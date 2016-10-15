@@ -25,6 +25,8 @@ Telegram::Bot::Client.run(token) do |bot|
 
     case message.text
 
+      when nil
+
       when "/author"
 
         bot.api.sendMessage(chat_id: message.chat.id, text: AUTHOR_TEXT)

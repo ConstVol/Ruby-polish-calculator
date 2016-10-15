@@ -1,13 +1,9 @@
 class RPN_calc
 
   def calc(task)
-    return 0 if task == ""
 
+    elements = clean_string(task)
     stack = []
-    elements = task.split(' ').map!{|e| e.gsub(/^[a-zA-Z]*$/,'')}.reject(&:empty?)
-    if elements.any?{|i| i =~ /^\d+$/?true:false}
-
-
     elements.each do |e|
       if !(%w[* - + / ** !].include?(e))
         stack.push e.to_f
@@ -34,18 +30,25 @@ class RPN_calc
        end
 
      else
-       "Kurwa! Seems that's not proper polish notation. Try again!"
+       "Kurwa! Seems that's not proper polish notation. Try again !"
      end
 
     end
     stack.pop
+  end
 
+  def clean_string(string)
+    elements = string.split(' ').map!{|e| e.gsub(/[a-zA-ZА-Яа-я()]/u,'')}.reject(&:empty?)
+    elements = elements.map!{|e| e.gsub(',' ,'.')}
+    if elements.any?{|i| i =~ /(\d+(\.\d+)?)/?true:false}
+      return elements
     else
-      "Kurwa! Seems that's not proper polish notation. Try again!"
+      "Kurwa! Seems that's not proper polish notation. Try again !"
     end
   end
 
   def toniller(num, counter)
+    counter = counter.round
     binary = "%b" % num
     binary.split("").reverse!.map!{|e| e =="1" && counter !=0 ? (counter -=1;e="0") : e }.reverse!.join.to_i(base=2)
   end
