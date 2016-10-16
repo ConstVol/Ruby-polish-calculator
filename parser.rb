@@ -2,7 +2,7 @@ class Parser
 
   def clean_string(string)
     string.slice!(0) if string[0] == "/"
-    elements = string.split(' ').map!{|e| e.gsub(/[^[*\-\+\!\/\(?<=^| )\d+(\.\d+)?(?=$| )]]/,'')}.reject{|item| item == '.' || item == ''}
+    elements = string.split(' ').map!{|e| e.gsub(/[^[*\-\*\+\!\/\^\d+(\.\d+)*$]]|[@#\$%\^&\||(\)\[\]:;]/,'')}.reject{|item| item == '.' || item == '' || item == '...'}
     p elements
     if elements.any?{|i| i =~ /(\d+(\.\d+)?)/?true:false}
       elements
@@ -22,3 +22,5 @@ class Parser
 
   end
 end
+
+
