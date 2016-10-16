@@ -24,7 +24,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
   bot.listen do |message|
 
-    logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text)
+    logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text) if message.text != nil
 
     p message.text
 
@@ -35,8 +35,13 @@ Telegram::Bot::Client.run(token) do |bot|
       when "/author"
 
         bot.api.sendMessage(chat_id: message.chat.id, text: AUTHOR_TEXT)
+        begin
         bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new("./photo.jpg", 'image/jpeg'))
-
+        rescue => e
+          puts "Rescue : #{e}"
+        rescue Timeout::Error => te
+          puts "Rescued from timeout : #{te}"
+        end
       when "/start"
 
         bot.api.sendMessage(chat_id: message.chat.id, text: HELP)

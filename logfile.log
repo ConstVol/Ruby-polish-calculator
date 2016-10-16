@@ -1,9 +1,57 @@
-# Logfile created on 2016-10-16 00:33:25 +0100 by logger.rb/53141
-I, [2016-10-16T00:35:20.930015 #20515]  INFO -- : "/weqweqwe"
-I, [2016-10-16T00:35:21.225981 #20515]  INFO -- : "/ asdasdasd"
-I, [2016-10-16T00:36:07.489423 #20570]  INFO -- : "/ this is the first message"
-I, [2016-10-16T00:37:38.067038 #20670]  INFO -- : / this is the second message
-I, [2016-10-16T00:38:41.442758 #20750]  INFO -- : / test
-I, [2016-10-16T00:43:53.463129 #21079]  INFO -- : / this is my first ,essageAlexanderAdamenko
-I, [2016-10-16T00:46:10.592596 #21237]  INFO -- : Alexander Adamenko: / 3 2 +
-I, [2016-10-16T00:46:16.364276 #21237]  INFO -- : Alexander Adamenko: / 55 2 /
+I, [2016-10-16T13:50:32.780943 #5693]  INFO -- : Alexander Adamenko: / test
+I, [2016-10-16T13:50:51.388845 #5693]  INFO -- : Constantin Volodkevich: /93 3 !
+I, [2016-10-16T13:51:03.566607 #5693]  INFO -- : Constantin Volodkevich: / 93 3 1
+I, [2016-10-16T13:51:14.115504 #5693]  INFO -- : Constantin Volodkevich: / 93 3 !
+I, [2016-10-16T13:51:26.627834 #5693]  INFO -- : Constantin Volodkevich: / 100 12 !
+I, [2016-10-16T13:51:43.354374 #5693]  INFO -- : Constantin Volodkevich: / 123 9 !
+I, [2016-10-16T13:51:58.196245 #5693]  INFO -- : Constantin Volodkevich: / 123123123123123 13 !
+I, [2016-10-16T13:52:38.839014 #5693]  INFO -- : Constantin Volodkevich: / 3 5 4 7 8 ! + - **
+I, [2016-10-16T13:53:28.763676 #5693]  INFO -- : Constantin Volodkevich: / ghbdt привет 3 бот 4 rrrr * acla,s;c нах
+I, [2016-10-16T13:53:57.038376 #5693]  INFO -- : Alexander Adamenko: / asdasd asdasdas 3 asdasdas 4 asdasda * asdasdas asdasdas asdasd
+I, [2016-10-16T13:54:15.669811 #5693]  INFO -- : Alexander Adamenko: / фывфвфыв 3 фывфывфыв 4 фывфыв * фывфывфыв
+I, [2016-10-16T13:54:55.768391 #5693]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; asdasd
+I, [2016-10-16T13:55:21.802711 #5693]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T13:58:31.218324 #6182]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T13:59:31.491283 #6264]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T13:59:40.230284 #6264]  INFO -- : Constantin Volodkevich: / 3 2 +
+I, [2016-10-16T14:03:37.784794 #6558]  INFO -- : Alexander Adamenko: / 3 2 +
+I, [2016-10-16T14:03:43.861803 #6558]  INFO -- : Alexander Adamenko: / test
+I, [2016-10-16T14:03:48.457619 #6558]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:03:52.529139 #6558]  INFO -- : Constantin Volodkevich: / 93 3 !
+I, [2016-10-16T14:03:58.485300 #6558]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:04:57.863235 #6558]  INFO -- : Constantin Volodkevich: / 3 4 *   ... ,,, . ,
+I, [2016-10-16T14:05:40.673554 #6706]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:05:49.785319 #6706]  INFO -- : Alexander Adamenko: / вфывфывфыв 3.2 фвфывфыв 4.4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:05:52.546286 #6706]  INFO -- : Constantin Volodkevich: / 3,5 3.5 *
+I, [2016-10-16T14:09:41.958752 #6977]  INFO -- : Alexander Adamenko: / вфывфывфыв 3 фвфывфыв 4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:10:09.553206 #6977]  INFO -- : Alexander Adamenko: / вфывфывфыв 3.2 фвфывфыв 4.4 фывфывфы, фывфывфыв ; * asdasc,d and the result is... 1408.0
+I, [2016-10-16T14:10:14.694158 #6977]  INFO -- : Alexander Adamenko: / вфывфывфыв 3.2 фвфывфыв 4.4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:10:25.271996 #6977]  INFO -- : Alexander Adamenko: / 3 2 +
+I, [2016-10-16T14:10:32.517373 #6977]  INFO -- : Constantin Volodkevich: / 3.2 2.4 +
+I, [2016-10-16T14:12:16.557442 #7141]  INFO -- : Constantin Volodkevich: / dlajfalsj asd;l /./ .. 3 4 * asld;kl;as . ,,
+I, [2016-10-16T14:14:56.206476 #7335]  INFO -- : Alexander Adamenko: / вфывфывфыв 3.2 фвфывфыв 4.4 фывфывфы, фывфывфыв ; * asdasc,d
+I, [2016-10-16T14:15:04.690609 #7335]  INFO -- : Constantin Volodkevich: / asdijasiodj awda mx cxc x ..,,.., ., , ,,. ,, 3 4 * dlkl;dv »/ .
+I, [2016-10-16T14:16:04.230415 #7335]  INFO -- : Constantin Volodkevich: / sdf,.,   csdcsd 3 4 * .. . ,,, ,, .. , $ & ^$
+I, [2016-10-16T14:16:20.152790 #7335]  INFO -- : Alexander Adamenko: / 3 4 *
+I, [2016-10-16T14:17:24.398781 #7518]  INFO -- : Alexander Adamenko: / sdf,.,   csdcsd 3 4 * .. . ,,, ,, .. , $ & ^$
+I, [2016-10-16T14:19:13.611539 #7518]  INFO -- : Constantin Volodkevich: 83 3 !
+I, [2016-10-16T14:19:22.373843 #7518]  INFO -- : Constantin Volodkevich: / 33 33 *
+I, [2016-10-16T14:20:32.725714 #7736]  INFO -- : Alexander Adamenko: / sdf,.,   csdcsd 3 4 * .. . ,,, ,, .. , $ & ^$
+I, [2016-10-16T14:20:35.073483 #7736]  INFO -- : Constantin Volodkevich: / 3 2 +
+I, [2016-10-16T14:20:41.510953 #7736]  INFO -- : Alexander Adamenko: / sdf,.,   csdcsd 3 4 * .. . ,,, ,, .. , $ & ^$
+I, [2016-10-16T18:05:39.608273 #7736]  INFO -- : Alexander Adamenko: / 2 3 +
+I, [2016-10-16T18:59:57.231488 #7736]  INFO -- : Alexander Adamenko: / еуые
+I, [2016-10-16T19:00:00.190704 #7736]  INFO -- : Alexander Adamenko: / test
+I, [2016-10-16T20:58:54.964722 #30063]  INFO -- : Constantin Volodkevich: привет, бот.
+реши мне задачку: 93 3 !
+I, [2016-10-16T20:59:13.290428 #30063]  INFO -- : Constantin Volodkevich: дводчмсосчм юю вывахз
+I, [2016-10-16T20:59:43.500812 #30063]  INFO -- : Constantin Volodkevich: привет, бот! 
+реши мне задачку: 93 3 !
+I, [2016-10-16T20:59:54.256413 #30063]  INFO -- : Constantin Volodkevich: 2 2 3 +
+I, [2016-10-16T21:01:41.547127 #30284]  INFO -- : Constantin Volodkevich: 2 2 3 +
+I, [2016-10-16T21:17:35.149158 #31331]  INFO -- : Constantin Volodkevich: 2 2 3 +
+I, [2016-10-16T21:17:40.670447 #31331]  INFO -- : Constantin Volodkevich: 2 2 3 +
+I, [2016-10-16T21:19:22.777322 #31331]  INFO -- : Alexander Adamenko: ((8+12)*(8+(8+2))/12
+I, [2016-10-16T21:20:28.603458 #31331]  INFO -- : Alexander Adamenko: / 8 12 + 8 2 + 8 + * 12 /
+I, [2016-10-16T21:26:56.292286 #31331]  INFO -- : Constantin Volodkevich: 20 8 2 + 8 + * 12 /
+I, [2016-10-16T21:27:19.631250 #31331]  INFO -- : Constantin Volodkevich: / 20 8 2 + 8 + * 12 /

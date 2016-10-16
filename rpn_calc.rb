@@ -3,15 +3,18 @@ class RPN_calc
   def calc(task)
 
     elements = clean_string(task)
+    if elements.is_a? String
+      "Kurwa! Seems that's not proper polish notation. Try again !"
+    else
     stack = []
-    Array(elements).each do |e|
-
-      if !(%w[* - + / ** !].include?(e))
+    elements.each do |e|
+    p elements
+      if !(%w[* - + / ** ! , .].include?(e))
         stack.push e.to_f
         next
       end
-      puts stack.length
-     if stack.size >= 2
+      p stack
+     if stack.size >= 2 && (%w[* - + / ** !].include?(e))
         b = stack.pop
         a = stack.pop
 
@@ -28,6 +31,8 @@ class RPN_calc
            stack.push a ** b
          when "!"
            stack.push toniller(a, b)
+         else
+
        end
 
      else
@@ -37,17 +42,20 @@ class RPN_calc
     end
 
     stack.pop
-  end
+    end
+end
 
   def clean_string(string)
-    elements = string.split(' ').map!{|e| e.gsub(/[a-zA-ZА-Яа-я()]/u,'')}.reject(&:empty?)
-    elements = elements.map!{|e| e.gsub(',' ,'.')}
+    string.slice!(0) if string[0] == "/"
+    elements = string.split(' ').map!{|e| e.gsub(/[^[*\-\+\!\/\(?<=^| )\d+(\.\d+)?(?=$| )]]/,'')}.reject{|item| item == '.' || item == ''}
+    p elements
     if elements.any?{|i| i =~ /(\d+(\.\d+)?)/?true:false}
-      return elements
+      elements
     else
-      "Kurwa! Seems that's not proper polish notation. Try again !"
+     "Eror"
     end
-    rescue "Error!"
+
+
   end
 
   def toniller(num, counter)
