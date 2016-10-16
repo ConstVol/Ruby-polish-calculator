@@ -1,19 +1,22 @@
+require './parser'
+
 class RPN_calc
 
   def calc(task)
+    parser = Parser.new
 
-    elements = clean_string(task)
+    elements = parser.clean_string(task)
     if elements.is_a? String
       "Kurwa! Seems that's not proper polish notation. Try again !"
     else
     stack = []
     elements.each do |e|
-    p elements
+
       if !(%w[* - + / ** ! , .].include?(e))
         stack.push e.to_f
         next
       end
-      p stack
+
      if stack.size >= 2 && (%w[* - + / ** !].include?(e))
         b = stack.pop
         a = stack.pop
@@ -32,31 +35,16 @@ class RPN_calc
          when "!"
            stack.push toniller(a, b)
          else
-
        end
 
      else
        "Kurwa! Seems that's not proper polish notation. Try again !"
      end
-
     end
 
     stack.pop
     end
 end
-
-  def clean_string(string)
-    string.slice!(0) if string[0] == "/"
-    elements = string.split(' ').map!{|e| e.gsub(/[^[*\-\+\!\/\(?<=^| )\d+(\.\d+)?(?=$| )]]/,'')}.reject{|item| item == '.' || item == ''}
-    p elements
-    if elements.any?{|i| i =~ /(\d+(\.\d+)?)/?true:false}
-      elements
-    else
-     "Eror"
-    end
-
-
-  end
 
   def toniller(num, counter)
     counter = counter.round

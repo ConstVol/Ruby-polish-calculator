@@ -2,6 +2,8 @@ require 'telegram/bot'
 require './rpn_calc'
 require "open-uri"
 require 'logger'
+require './parser'
+
 
 token = '278148159:AAFq22aoGX0_rdCqQxQ9W2SfAcOs3oj4A0A'
 
@@ -21,6 +23,8 @@ To use polish calculator functions just type in equation in proper polish notati
 Telegram::Bot::Client.run(token) do |bot|
 
   calculator = RPN_calc.new
+  parser = Parser.new
+
 
   bot.listen do |message|
 
@@ -49,7 +53,7 @@ Telegram::Bot::Client.run(token) do |bot|
       else
 
         result = calculator.calc(message.text)
-        bot.api.sendMessage(chat_id: message.chat.id, text: "So, your message is #{message.text} and the result is... #{result}")
+        bot.api.sendMessage(chat_id: message.chat.id, text: "So, your task was #{parser.initial_equation(message.text)} and the result is... #{result}")
 
     end
 
