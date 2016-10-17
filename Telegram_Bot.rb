@@ -28,7 +28,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
   bot.listen do |message|
 
-    #logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text) if message.text != nil || message != nil
+    logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text.to_s)
 
     p message.text
 
@@ -47,7 +47,8 @@ Telegram::Bot::Client.run(token) do |bot|
           puts "Rescued from timeout : #{te}"
         end
       when "/start"
-
+        logger.info("User-input: #{input.dump}")
+        logger.info("User-input: %p" % input)
         bot.api.sendMessage(chat_id: message.chat.id, text: HELP)
 
       else
