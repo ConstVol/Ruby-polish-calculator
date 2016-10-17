@@ -28,7 +28,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
   bot.listen do |message|
 
-    logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text) if message.text != nil
+    logger.info(message.from.first_name + " " + message.from.last_name + ": " + message.text) if message.text != nil || message != nil
 
     p message.text
 
